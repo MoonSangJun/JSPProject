@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<h1>사용자 추가</h1>
+
+<form action ="form_ok.jsp"  method = "post">
+
+
+  <div class ="col-md-6">
+    <label for ="inputusername" class="form-label">NAME</label>
+  <input type="text" name = "username" id="inputusername"><br>
+  </div>
+  Age : <input type="text" name = "age"><br>
+
+
+  <p>hobby</p>
+  <input type = "checkbox" name="hobby" value ="movie"> 영화 <br>
+  <input type = "checkbox" name="hobby" value ="food"> 음식
+
+
+
+  <p>Gender</p>
+  <label><input type="radio" name="gender" value="male"> Male</label>
+  <label><input type="radio" name="gender" value="female" checked> Female</label>
+
+
+  <p>Country</p>
+  <select name = "Country">
+    <optgroup label="Asia">
+      <option value = "South Korea">South Korea</option>
+      <option value = "Japan">Japan</option>
+      <option value = "China">China</option>
+    </optgroup>
+    <optgroup label="Europe">
+      <option value = "Paris">Paris</option>
+      <option value = "Spain">Spain</option>
+      <option value = "England">England</option>
+    </optgroup>
+  </select>
+
+
+  <p>BirthDay</p>
+  <input type="date" name="birthday">
+
+  <p>Introduce yourself</p>
+  <p><textarea cols="50" rows="10"></textarea></p>
+
+
+  <fieldset>
+    <legend>Choose your favorite Day</legend>
+    <input type="radio" id="monday" name="day" value="M">
+    <label for="monday">Monday</label><br>
+
+    <input type="radio" id="tuesday" name="day" value="T">
+    <label for="tuesday">Tuesday</label><br>
+
+    <input type="radio" id="wednesday" name="day" value="w" />
+    <label for="wednesday">Wednesday</label>
+  </fieldset>
+
+
+  <p>Major</p>
+  <input list="Major" name="Majorlist" id="Majorlist">
+  <datalist id="Major">
+    <option value="computerscience" label="컴퓨터공학">
+    <option value="ICT" label="ICT" label="ICT창업">
+    <option value="biology" label="생명과학">
+  </datalist>
+
+  <p>Choose youre favorite color</p>
+  <input type="color" name = "color" value="#ff000">
+  <br>
+
+  <input class="form-check-input" type="checkbox" id="gridCheck" name="isCheck" value="1">
+  <label class="form-check-label" for="gridCheck">Check me out</label>
+
+  <br>
+  <br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
